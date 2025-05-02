@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import LoginModal from "./LoginModal";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,21 +29,15 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <a href="/" className="text-scriptalis-dark font-bold text-xl">
+          <Link to="/" className="text-scriptalis-dark font-bold text-xl">
             Scriptalis
-          </a>
+          </Link>
         </div>
         
         <div className="hidden md:flex items-center space-x-6">
-          <a href="#features" className="text-scriptalis-dark hover:text-scriptalis-accent transition-colors">
-            Features
-          </a>
-          <a href="#demo" className="text-scriptalis-dark hover:text-scriptalis-accent transition-colors">
-            Demo
-          </a>
-          <a href="#contact" className="text-scriptalis-dark hover:text-scriptalis-accent transition-colors">
+          <Link to="#contact" className="text-scriptalis-dark hover:text-scriptalis-accent transition-colors">
             Contact
-          </a>
+          </Link>
           
           <Dialog>
             <DialogTrigger asChild>
@@ -54,7 +49,7 @@ const Navbar = () => {
           </Dialog>
           
           <Button className="bg-scriptalis-accent hover:bg-scriptalis-accent/90">
-            Get Started
+            Talk with sales
           </Button>
         </div>
         

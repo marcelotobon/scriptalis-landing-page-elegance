@@ -12,35 +12,6 @@ const Footer = () => {
               The all-in-one platform for team productivity
             </p>
           </div>
-          
-          <div className="flex gap-8 flex-wrap justify-center">
-            <div className="space-y-2">
-              <div className="font-semibold text-sm">Product</div>
-              <div className="space-y-2 text-sm">
-                <div><a href="#" className="text-gray-500 hover:text-scriptalis-accent">Features</a></div>
-                <div><a href="#" className="text-gray-500 hover:text-scriptalis-accent">Pricing</a></div>
-                <div><a href="#" className="text-gray-500 hover:text-scriptalis-accent">Integrations</a></div>
-              </div>
-            </div>
-            
-            <div className="space-y-2">
-              <div className="font-semibold text-sm">Resources</div>
-              <div className="space-y-2 text-sm">
-                <div><a href="#" className="text-gray-500 hover:text-scriptalis-accent">Documentation</a></div>
-                <div><a href="#" className="text-gray-500 hover:text-scriptalis-accent">Guides</a></div>
-                <div><a href="#" className="text-gray-500 hover:text-scriptalis-accent">Blog</a></div>
-              </div>
-            </div>
-            
-            <div className="space-y-2">
-              <div className="font-semibold text-sm">Company</div>
-              <div className="space-y-2 text-sm">
-                <div><a href="#" className="text-gray-500 hover:text-scriptalis-accent">About</a></div>
-                <div><a href="#" className="text-gray-500 hover:text-scriptalis-accent">Careers</a></div>
-                <div><a href="#" className="text-gray-500 hover:text-scriptalis-accent">Contact</a></div>
-              </div>
-            </div>
-          </div>
         </div>
         
         <Separator className="my-8" />

@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -17,11 +16,7 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button className="bg-scriptalis-accent hover:bg-scriptalis-accent/90 text-white text-lg px-8 py-6">
-              Get Started Free
-            </Button>
-            <Button variant="outline" className="text-lg px-8 py-6 group">
-              See how it works
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              Talk with sales
             </Button>
           </div>
           

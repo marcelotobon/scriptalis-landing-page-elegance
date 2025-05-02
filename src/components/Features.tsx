@@ -1,22 +1,26 @@
 
 import { useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const featureData = [
   {
     title: "Intelligent Automation",
     description: "Create custom workflows to automate repetitive tasks and save valuable time for your team.",
     icon: "✨",
+    link: "/intelligent-automation"
   },
   {
     title: "Seamless Collaboration",
     description: "Work together in real-time with your team members, no matter where they're located.",
     icon: "🤝",
+    link: "/seamless-collaboration"
   },
   {
     title: "Powerful Analytics",
     description: "Gain insights into your team's performance with detailed analytics and custom reports.",
     icon: "📊",
+    link: "/powerful-analytics"
   }
 ];
 
@@ -76,10 +80,10 @@ const Features = () => {
               <div className="text-4xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
               <p className="text-gray-600 mb-6">{feature.description}</p>
-              <a href="#" className="text-scriptalis-accent font-medium inline-flex items-center group">
+              <Link to={feature.link} className="text-scriptalis-accent font-medium inline-flex items-center group">
                 Learn more 
                 <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
