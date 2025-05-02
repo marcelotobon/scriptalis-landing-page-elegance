@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
@@ -35,34 +34,26 @@ const Navbar = () => {
         </div>
         
         <div className="hidden md:flex items-center space-x-6">
-          <Link to="#contact" className="text-scriptalis-dark hover:text-scriptalis-accent transition-colors">
+          <Link to="/contact" className="text-scriptalis-dark hover:text-scriptalis-accent transition-colors">
             Contact
           </Link>
           
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button variant="outline" className="ml-4">Log in</Button>
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-md">
-              <LoginModal />
-            </DialogContent>
-          </Dialog>
+          <a href="/app2.py">
+            <Button variant="outline" className="ml-4">Log in</Button>
+          </a>
           
-          <Button className="bg-scriptalis-accent hover:bg-scriptalis-accent/90">
-            Talk with sales
-          </Button>
+          <Link to="/contact">
+            <Button className="bg-scriptalis-accent hover:bg-scriptalis-accent/90">
+              Talk with sales
+            </Button>
+          </Link>
         </div>
         
         {/* Mobile menu button */}
         <div className="md:hidden">
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button variant="outline" className="ml-4">Log in</Button>
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-md">
-              <LoginModal />
-            </DialogContent>
-          </Dialog>
+          <a href="/app2.py">
+            <Button variant="outline" className="ml-4">Log in</Button>
+          </a>
         </div>
       </div>
     </nav>
