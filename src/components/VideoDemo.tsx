@@ -33,9 +33,9 @@ const VideoDemo = () => {
     <section id="demo" className="landing-section bg-white" ref={sectionRef}>
       <div className="max-w-7xl mx-auto reveal-on-scroll">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">See Scriptalis in Action</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ve Scriptalis en acción</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Watch our quick demo to see how Scriptalis can transform your team's workflow
+            Mira nuestro breve demo para ver cómo Scriptalis puede transformar el flujo de trabajo de tu equipo
           </p>
         </div>
         
@@ -47,7 +47,7 @@ const VideoDemo = () => {
           </div>
           <img 
             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
-            alt="Scriptalis Video Demo" 
+            alt="Demostración de video de Scriptalis" 
             className="w-full h-full object-cover"
           />
         </div>

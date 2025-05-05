@@ -5,20 +5,20 @@ import { Link } from "react-router-dom";
 
 const featureData = [
   {
-    title: "Intelligent Automation",
-    description: "Create custom workflows to automate repetitive tasks and save valuable time for your team.",
+    title: "Automatización Inteligente",
+    description: "Crea flujos de trabajo personalizados para automatizar tareas repetitivas y ahorrar tiempo valioso para tu equipo.",
     icon: "✨",
     link: "/intelligent-automation"
   },
   {
-    title: "Seamless Collaboration",
-    description: "Work together in real-time with your team members, no matter where they're located.",
+    title: "Colaboración Sin Problemas",
+    description: "Trabaja en tiempo real con los miembros de tu equipo, sin importar dónde estén ubicados.",
     icon: "🤝",
     link: "/seamless-collaboration"
   },
   {
-    title: "Powerful Analytics",
-    description: "Gain insights into your team's performance with detailed analytics and custom reports.",
+    title: "Análisis Potente",
+    description: "Obtén información sobre el rendimiento de tu equipo con análisis detallados e informes personalizados.",
     icon: "📊",
     link: "/powerful-analytics"
   }
@@ -63,9 +63,9 @@ const Features = () => {
     <section id="features" className="landing-section bg-scriptalis-light/30" ref={sectionRef}>
       <div className="max-w-7xl mx-auto reveal-on-scroll">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Key Features</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Características Principales</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover how Scriptalis helps teams achieve more with less effort
+            Descubre cómo Scriptalis ayuda a los equipos a lograr más con menos esfuerzo
           </p>
         </div>
         
@@ -81,7 +81,7 @@ const Features = () => {
               <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
               <p className="text-gray-600 mb-6">{feature.description}</p>
               <Link to={feature.link} className="text-scriptalis-accent font-medium inline-flex items-center group">
-                Learn more 
+                Saber más 
                 <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>

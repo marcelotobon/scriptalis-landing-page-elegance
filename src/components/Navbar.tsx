@@ -36,16 +36,16 @@ const Navbar = () => {
         
         <div className="hidden md:flex items-center space-x-6">
           <Link to="/contact" className="text-scriptalis-dark hover:text-scriptalis-accent transition-colors">
-            Contact
+            Contacto
           </Link>
           
           <a href="/app2.py">
-            <Button variant="outline" className="ml-4">Log in</Button>
+            <Button variant="outline" className="ml-4">Iniciar sesión</Button>
           </a>
           
           <Link to="/contact">
             <Button className="bg-scriptalis-accent hover:bg-scriptalis-accent/90">
-              Talk with sales
+              Hablar con ventas
             </Button>
           </Link>
         </div>
@@ -53,7 +53,7 @@ const Navbar = () => {
         {/* Mobile menu button */}
         <div className="md:hidden">
           <a href="/app2.py">
-            <Button variant="outline" className="ml-4">Log in</Button>
+            <Button variant="outline" className="ml-4">Iniciar sesión</Button>
           </a>
         </div>
       </div>

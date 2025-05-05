@@ -40,11 +40,11 @@ const IntelligentAutomation = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="reveal-on-scroll">
               <h1 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">
-                <span className="gradient-text">Intelligent Automation</span> for your workflow
+                <span className="gradient-text">Automatización Inteligente</span> para tu flujo de trabajo
               </h1>
               
               <p className="text-lg text-gray-600 mb-8">
-                Scriptalis uses advanced AI to automate your routine tasks, reducing manual work and helping your team focus on what really matters. Our intelligent automation platform learns from your workflow and suggests optimizations to increase productivity.
+                Scriptalis utiliza IA avanzada para automatizar tus tareas rutinarias, reduciendo el trabajo manual y ayudando a tu equipo a centrarse en lo que realmente importa. Nuestra plataforma de automatización inteligente aprende de tu flujo de trabajo y sugiere optimizaciones para aumentar la productividad.
               </p>
               
               <div className="space-y-4">
@@ -52,26 +52,26 @@ const IntelligentAutomation = () => {
                   <div className="bg-scriptalis-light/50 p-2 rounded-full mr-4">
                     <div className="w-6 h-6 text-center">✓</div>
                   </div>
-                  <p>Automate repetitive tasks with custom workflows</p>
+                  <p>Automatiza tareas repetitivas con flujos de trabajo personalizados</p>
                 </div>
                 
                 <div className="flex items-start">
                   <div className="bg-scriptalis-light/50 p-2 rounded-full mr-4">
                     <div className="w-6 h-6 text-center">✓</div>
                   </div>
-                  <p>AI-powered suggestions for workflow improvements</p>
+                  <p>Sugerencias impulsadas por IA para mejoras en el flujo de trabajo</p>
                 </div>
                 
                 <div className="flex items-start">
                   <div className="bg-scriptalis-light/50 p-2 rounded-full mr-4">
                     <div className="w-6 h-6 text-center">✓</div>
                   </div>
-                  <p>Integrations with your favorite tools and platforms</p>
+                  <p>Integraciones con tus herramientas y plataformas favoritas</p>
                 </div>
               </div>
               
               <Button className="bg-scriptalis-accent hover:bg-scriptalis-accent/90 text-white mt-8 text-lg px-8 py-6">
-                Talk with sales
+                Hablar con ventas
               </Button>
             </div>
             
@@ -79,7 +79,7 @@ const IntelligentAutomation = () => {
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
-                  alt="Intelligent Automation" 
+                  alt="Automatización Inteligente" 
                   className="w-full h-auto object-cover"
                 />
               </div>

@@ -38,13 +38,13 @@ const Contact = () => {
       <section className="landing-section pt-32 md:pt-40 pb-16 md:pb-24 bg-white" ref={sectionRef}>
         <div className="max-w-7xl mx-auto px-6 reveal-on-scroll">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Contact Us</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Contáctanos</h1>
             
             <div className="grid md:grid-cols-2 gap-12 mb-12">
               <div className="space-y-6">
-                <h2 className="text-2xl font-semibold">Get in touch</h2>
+                <h2 className="text-2xl font-semibold">Ponte en contacto</h2>
                 <p className="text-gray-600">
-                  Have questions about Scriptalis? Our team is here to help you find the right solution for your business.
+                  ¿Tienes preguntas sobre Scriptalis? Nuestro equipo está aquí para ayudarte a encontrar la solución adecuada para tu empresa.
                 </p>
                 
                 <div className="space-y-4 mt-8">
@@ -58,30 +58,30 @@ const Contact = () => {
                   <div className="flex items-center gap-3">
                     <Mail className="text-scriptalis-accent" />
                     <a href="mailto:sales@scriptalis.com" className="text-scriptalis-dark hover:text-scriptalis-accent">
-                      sales@scriptalis.com
+                      ventas@scriptalis.com
                     </a>
                   </div>
                   
                   <div className="flex items-start gap-3">
                     <Calendar className="text-scriptalis-accent mt-1" />
                     <span className="text-scriptalis-dark">
-                      Schedule a meeting using the calendar below
+                      Programa una reunión usando el calendario a continuación
                     </span>
                   </div>
                 </div>
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-medium mb-4">Office Location</h3>
+                <h3 className="text-xl font-medium mb-4">Ubicación de Oficina</h3>
                 <p className="text-gray-600 mb-2">1234 Tech Park Drive</p>
                 <p className="text-gray-600 mb-2">Suite 500</p>
                 <p className="text-gray-600 mb-2">Atlanta, GA 30308</p>
-                <p className="text-gray-600">United States</p>
+                <p className="text-gray-600">Estados Unidos</p>
               </div>
             </div>
             
             <div className="mt-12">
-              <h2 className="text-2xl font-semibold mb-6 text-center">Schedule a Demo</h2>
+              <h2 className="text-2xl font-semibold mb-6 text-center">Programa una Demo</h2>
               {/* Google Calendar Appointment Scheduling */}
               <iframe 
                 src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1lNZMSCevc11rhTxPwF5F3Lyl6t5oUL3e-kzkXvFDvA3ECWP0DN4MHFvjtVP0Wqp64ktprWE3E?gv=true" 

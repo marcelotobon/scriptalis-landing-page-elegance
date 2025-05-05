@@ -19,8 +19,8 @@ const LoginModal = () => {
     setTimeout(() => {
       setLoading(false);
       toast({
-        title: "Login attempted",
-        description: "This is a demo. No actual login functionality implemented.",
+        title: "Intento de inicio de sesión",
+        description: "Este es un demo. No se ha implementado ninguna funcionalidad de inicio de sesión real.",
       });
     }, 1000);
   };
@@ -28,17 +28,17 @@ const LoginModal = () => {
   return (
     <div className="space-y-6 py-4">
       <div className="text-center mb-2">
-        <h2 className="text-2xl font-semibold">Welcome back</h2>
-        <p className="text-sm text-gray-500">Log in to your Scriptalis account</p>
+        <h2 className="text-2xl font-semibold">Bienvenido de nuevo</h2>
+        <p className="text-sm text-gray-500">Inicia sesión en tu cuenta de Scriptalis</p>
       </div>
       
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
-          <Label htmlFor="email">Email</Label>
+          <Label htmlFor="email">Correo electrónico</Label>
           <Input
             id="email"
             type="email"
-            placeholder="your@email.com"
+            placeholder="tu@correo.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -47,9 +47,9 @@ const LoginModal = () => {
         
         <div className="space-y-2">
           <div className="flex items-center justify-between">
-            <Label htmlFor="password">Password</Label>
+            <Label htmlFor="password">Contraseña</Label>
             <a href="#" className="text-xs text-scriptalis-accent hover:underline">
-              Forgot password?
+              ¿Olvidaste la contraseña?
             </a>
           </div>
           <Input
@@ -66,14 +66,14 @@ const LoginModal = () => {
           className="w-full bg-scriptalis-accent hover:bg-scriptalis-accent/90"
           disabled={loading}
         >
-          {loading ? "Logging in..." : "Log in"}
+          {loading ? "Iniciando sesión..." : "Iniciar sesión"}
         </Button>
       </form>
       
       <div className="text-center text-sm">
-        <span className="text-gray-500">Don't have an account?</span>{" "}
+        <span className="text-gray-500">¿No tienes una cuenta?</span>{" "}
         <a href="#" className="text-scriptalis-accent hover:underline">
-          Sign up
+          Regístrate
         </a>
       </div>
     </div>

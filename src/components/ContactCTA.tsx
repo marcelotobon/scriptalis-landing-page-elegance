@@ -43,8 +43,8 @@ const ContactCTA = () => {
       setLoading(false);
       setEmail("");
       toast({
-        title: "Thanks for your interest!",
-        description: "We'll be in touch with more information soon.",
+        title: "¡Gracias por tu interés!",
+        description: "Nos pondremos en contacto contigo próximamente con más información.",
       });
     }, 1000);
   };
@@ -53,16 +53,16 @@ const ContactCTA = () => {
     <section id="contact" className="landing-section bg-scriptalis-dark text-white" ref={sectionRef}>
       <div className="max-w-7xl mx-auto reveal-on-scroll">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to transform your workflow?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para transformar tu flujo de trabajo?</h2>
           <p className="text-lg text-gray-300 mb-8">
-            Join thousands of teams already using Scriptalis to increase productivity and streamline their processes.
+            Únete a miles de equipos que ya utilizan Scriptalis para aumentar la productividad y simplificar sus procesos.
           </p>
           
           <form onSubmit={handleSubmit} className="max-w-md mx-auto">
             <div className="flex flex-col sm:flex-row gap-3">
               <Input
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Ingresa tu correo electrónico"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -73,13 +73,13 @@ const ContactCTA = () => {
                 className="bg-white text-scriptalis-dark hover:bg-white/90 hover:text-scriptalis-dark"
                 disabled={loading}
               >
-                {loading ? "Sending..." : "Get More Info"}
+                {loading ? "Enviando..." : "Obtener Más Información"}
               </Button>
             </div>
           </form>
           
           <p className="text-sm text-gray-400 mt-4">
-            We'll never share your email. Unsubscribe anytime.
+            Nunca compartiremos tu correo electrónico. Cancela la suscripción cuando quieras.
           </p>
         </div>
       </div>
