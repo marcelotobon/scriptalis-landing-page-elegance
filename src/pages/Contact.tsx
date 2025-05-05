@@ -8,6 +8,9 @@ const Contact = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Aseguramos que la página se carga correctamente
+    console.log("Contact page mounted");
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -32,12 +35,12 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <section className="landing-section pt-32 md:pt-40 pb-16 md:pb-24 bg-white" ref={sectionRef}>
-        <div className="max-w-7xl mx-auto px-6 reveal-on-scroll">
-          <div className="max-w-3xl mx-auto">
+      <section className="landing-section pt-32 md:pt-40 pb-16 md:pb-24 bg-white flex-grow" ref={sectionRef}>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-3xl mx-auto reveal-on-scroll">
             <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Contáctanos</h1>
             
             <div className="grid md:grid-cols-2 gap-12 mb-12">
@@ -49,21 +52,21 @@ const Contact = () => {
                 
                 <div className="space-y-4 mt-8">
                   <div className="flex items-center gap-3">
-                    <PhoneCall className="text-scriptalis-accent" />
+                    <PhoneCall size={20} className="text-scriptalis-accent" />
                     <a href="tel:+14045551234" className="text-scriptalis-dark hover:text-scriptalis-accent">
                       +1 (404) 555-1234
                     </a>
                   </div>
                   
                   <div className="flex items-center gap-3">
-                    <Mail className="text-scriptalis-accent" />
-                    <a href="mailto:sales@scriptalis.com" className="text-scriptalis-dark hover:text-scriptalis-accent">
+                    <Mail size={20} className="text-scriptalis-accent" />
+                    <a href="mailto:ventas@scriptalis.com" className="text-scriptalis-dark hover:text-scriptalis-accent">
                       ventas@scriptalis.com
                     </a>
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <Calendar className="text-scriptalis-accent mt-1" />
+                    <Calendar size={20} className="text-scriptalis-accent mt-1" />
                     <span className="text-scriptalis-dark">
                       Puedes contactarnos para programar una reunión
                     </span>

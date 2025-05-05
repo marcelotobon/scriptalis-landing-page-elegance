@@ -39,9 +39,14 @@ const Navbar = () => {
             Contacto
           </Link>
           
-          <a href="/app2.py">
-            <Button variant="outline" className="ml-4">Iniciar sesión</Button>
-          </a>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="outline" className="ml-4">Iniciar sesión</Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-md">
+              <LoginModal />
+            </DialogContent>
+          </Dialog>
           
           <Link to="/contact">
             <Button className="bg-scriptalis-accent hover:bg-scriptalis-accent/90">
@@ -52,9 +57,14 @@ const Navbar = () => {
         
         {/* Mobile menu button */}
         <div className="md:hidden">
-          <a href="/app2.py">
-            <Button variant="outline" className="ml-4">Iniciar sesión</Button>
-          </a>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="outline" className="ml-4">Iniciar sesión</Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-md">
+              <LoginModal />
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </nav>
