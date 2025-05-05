@@ -89,6 +89,7 @@ const Contact = () => {
                 width="100%" 
                 height="600" 
                 frameBorder="0"
+                title="Google Calendar"
               ></iframe>
             </div>
           </div>
