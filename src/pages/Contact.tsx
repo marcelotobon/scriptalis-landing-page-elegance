@@ -65,7 +65,7 @@ const Contact = () => {
                   <div className="flex items-start gap-3">
                     <Calendar className="text-scriptalis-accent mt-1" />
                     <span className="text-scriptalis-dark">
-                      Programa una reunión usando el calendario a continuación
+                      Puedes contactarnos para programar una reunión
                     </span>
                   </div>
                 </div>
@@ -78,19 +78,6 @@ const Contact = () => {
                 <p className="text-gray-600 mb-2">Atlanta, GA 30308</p>
                 <p className="text-gray-600">Estados Unidos</p>
               </div>
-            </div>
-            
-            <div className="mt-12">
-              <h2 className="text-2xl font-semibold mb-6 text-center">Programa una Demo</h2>
-              {/* Google Calendar Appointment Scheduling */}
-              <iframe 
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1lNZMSCevc11rhTxPwF5F3Lyl6t5oUL3e-kzkXvFDvA3ECWP0DN4MHFvjtVP0Wqp64ktprWE3E?gv=true" 
-                style={{ border: 0 }} 
-                width="100%" 
-                height="600" 
-                frameBorder="0"
-                title="Google Calendar"
-              ></iframe>
             </div>
           </div>
         </div>
