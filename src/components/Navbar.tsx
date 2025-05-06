@@ -39,14 +39,9 @@ const Navbar = () => {
             Contacto
           </Link>
           
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button variant="outline" className="ml-4">Iniciar sesión</Button>
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-md">
-              <LoginModal />
-            </DialogContent>
-          </Dialog>
+          <a href="https://app.scriptalis.com/" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" className="ml-4">Iniciar sesión</Button>
+          </a>
           
           <Link to="/contacto2">
             <Button className="bg-scriptalis-accent hover:bg-scriptalis-accent/90">
@@ -57,14 +52,9 @@ const Navbar = () => {
         
         {/* Mobile menu button */}
         <div className="md:hidden">
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button variant="outline" className="ml-4">Iniciar sesión</Button>
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-md">
-              <LoginModal />
-            </DialogContent>
-          </Dialog>
+          <a href="https://app.scriptalis.com/" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" className="ml-4">Iniciar sesión</Button>
+          </a>
         </div>
       </div>
     </nav>
