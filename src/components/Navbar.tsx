@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
         
         <div className="hidden md:flex items-center space-x-6">
-          <Link to="/contact" className="text-scriptalis-dark hover:text-scriptalis-accent transition-colors">
+          <Link to="/contacto2" className="text-scriptalis-dark hover:text-scriptalis-accent transition-colors">
             Contacto
           </Link>
           
@@ -48,7 +48,7 @@ const Navbar = () => {
             </DialogContent>
           </Dialog>
           
-          <Link to="/contact">
+          <Link to="/contacto2">
             <Button className="bg-scriptalis-accent hover:bg-scriptalis-accent/90">
               Hablar con ventas
             </Button>
