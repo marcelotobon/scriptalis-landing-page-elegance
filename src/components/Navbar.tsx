@@ -1,8 +1,6 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import LoginModal from "./LoginModal";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

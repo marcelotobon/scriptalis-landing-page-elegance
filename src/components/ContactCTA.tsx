@@ -1,6 +1,5 @@
 
 import { useRef, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { Mail, MessageSquare } from "lucide-react";
 
 const ContactCTA = () => {
@@ -34,9 +33,9 @@ const ContactCTA = () => {
     <section id="contact" className="landing-section bg-scriptalis-dark text-white" ref={sectionRef}>
       <div className="max-w-7xl mx-auto reveal-on-scroll">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para transformar tu flujo de trabajo?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para revolucionar tu redacción periodística?</h2>
           <p className="text-lg text-gray-300 mb-8">
-            Únete a miles de equipos que ya utilizan Scriptalis para aumentar la productividad y simplificar sus procesos.
+            Únete a cientos de periodistas y medios que ya utilizan Scriptalis para crear contenido de mayor calidad en menos tiempo.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
@@ -60,7 +59,7 @@ const ContactCTA = () => {
           </div>
           
           <p className="text-sm text-gray-400 mt-4">
-            Nuestro equipo está listo para atenderte en cualquier momento.
+            Nuestro equipo está listo para mostrarte cómo Scriptalis puede adaptarse a tu sala de redacción.
           </p>
         </div>
       </div>

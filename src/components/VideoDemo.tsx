@@ -35,7 +35,7 @@ const VideoDemo = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ve Scriptalis en acción</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Mira nuestro breve demo para ver cómo Scriptalis puede transformar el flujo de trabajo de tu equipo
+            Descubre cómo nuestra IA acelera la creación de contenido periodístico manteniendo la integridad editorial
           </p>
         </div>
         
@@ -46,8 +46,8 @@ const VideoDemo = () => {
             </button>
           </div>
           <img 
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
-            alt="Demostración de video de Scriptalis" 
+            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+            alt="Demostración de Scriptalis para periodistas" 
             className="w-full h-full object-cover"
           />
         </div>

@@ -8,15 +8,15 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-6 max-w-3xl mx-auto px-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Optimiza tu flujo de trabajo con <span className="gradient-text">Scriptalis</span>
+            Revoluciona tu redacción con <span className="gradient-text">Scriptalis</span>
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            La plataforma todo en uno para equipos que buscan automatizar tareas, colaborar sin problemas y aumentar la productividad.
+            La plataforma de IA para periodistas y redactores que potencia tu creatividad, mantiene tu estilo único y entrega textos listos para publicar.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Link to="/contact">
+            <Link to="/contacto2">
               <Button className="bg-scriptalis-accent hover:bg-scriptalis-accent/90 text-white text-lg px-8 py-6">
                 Hablar con ventas
               </Button>

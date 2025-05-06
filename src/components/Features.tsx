@@ -1,25 +1,25 @@
 
 import { useEffect, useRef } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Brain, Pencil, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const featureData = [
   {
-    title: "Automatización Inteligente",
-    description: "Crea flujos de trabajo personalizados para automatizar tareas repetitivas y ahorrar tiempo valioso para tu equipo.",
-    icon: "✨",
+    title: "Redacción Asistida por IA",
+    description: "Genera artículos periodísticos, reportajes y contenido de alta calidad en minutos, ahorrando horas de trabajo en investigación y escritura.",
+    icon: Brain,
     link: "/intelligent-automation"
   },
   {
-    title: "Colaboración Sin Problemas",
-    description: "Trabaja en tiempo real con los miembros de tu equipo, sin importar dónde estén ubicados.",
-    icon: "🤝",
+    title: "Preserva tu Estilo Personal",
+    description: "Nuestra tecnología aprende y preserva tu voz única como periodista, adaptándose a tu tono y estilo editorial particular.",
+    icon: Pencil,
     link: "/seamless-collaboration"
   },
   {
-    title: "Análisis Potente",
-    description: "Obtén información sobre el rendimiento de tu equipo con análisis detallados e informes personalizados.",
-    icon: "📊",
+    title: "Textos Listos para Publicar",
+    description: "Recibe contenido perfectamente formateado que cumple con los estándares periodísticos, listo para ser publicado sin revisiones extensas.",
+    icon: FileText,
     link: "/powerful-analytics"
   }
 ];
@@ -63,9 +63,9 @@ const Features = () => {
     <section id="features" className="landing-section bg-scriptalis-light/30" ref={sectionRef}>
       <div className="max-w-7xl mx-auto reveal-on-scroll">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Características Principales</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Características para Periodistas</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Descubre cómo Scriptalis ayuda a los equipos a lograr más con menos esfuerzo
+            Descubre cómo Scriptalis está transformando la redacción periodística moderna
           </p>
         </div>
         
@@ -77,7 +77,9 @@ const Features = () => {
               className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 reveal-on-scroll"
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <div className="text-4xl mb-4">{feature.icon}</div>
+              <div className="text-4xl mb-4">
+                <feature.icon className="h-10 w-10 text-scriptalis-accent" />
+              </div>
               <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
               <p className="text-gray-600 mb-6">{feature.description}</p>
               <Link to={feature.link} className="text-scriptalis-accent font-medium inline-flex items-center group">
