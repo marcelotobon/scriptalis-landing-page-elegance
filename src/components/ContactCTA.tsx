@@ -1,13 +1,9 @@
 
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useToast } from "@/components/ui/use-toast";
+import { Mail, MessageSquare } from "lucide-react";
 
 const ContactCTA = () => {
-  const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
-  const { toast } = useToast();
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -34,21 +30,6 @@ const ContactCTA = () => {
     };
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    
-    // Simulate API call
-    setTimeout(() => {
-      setLoading(false);
-      setEmail("");
-      toast({
-        title: "¡Gracias por tu interés!",
-        description: "Nos pondremos en contacto contigo próximamente con más información.",
-      });
-    }, 1000);
-  };
-
   return (
     <section id="contact" className="landing-section bg-scriptalis-dark text-white" ref={sectionRef}>
       <div className="max-w-7xl mx-auto reveal-on-scroll">
@@ -58,28 +39,28 @@ const ContactCTA = () => {
             Únete a miles de equipos que ya utilizan Scriptalis para aumentar la productividad y simplificar sus procesos.
           </p>
           
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Input
-                type="email"
-                placeholder="Ingresa tu correo electrónico"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
-              />
-              <Button 
-                type="submit" 
-                className="bg-white text-scriptalis-dark hover:bg-white/90 hover:text-scriptalis-dark"
-                disabled={loading}
-              >
-                {loading ? "Enviando..." : "Obtener Más Información"}
-              </Button>
-            </div>
-          </form>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
+            <a 
+              href="https://wa.me/message" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white rounded-md px-6 py-3 transition-colors w-full"
+            >
+              <MessageSquare className="w-5 h-5" />
+              Hablar por WhatsApp
+            </a>
+            
+            <a 
+              href="mailto:ventas@scriptalis.com" 
+              className="flex items-center justify-center gap-2 bg-scriptalis-accent hover:bg-scriptalis-accent/90 text-white rounded-md px-6 py-3 transition-colors w-full"
+            >
+              <Mail className="w-5 h-5" />
+              Enviar correo
+            </a>
+          </div>
           
           <p className="text-sm text-gray-400 mt-4">
-            Nunca compartiremos tu correo electrónico. Cancela la suscripción cuando quieras.
+            Nuestro equipo está listo para atenderte en cualquier momento.
           </p>
         </div>
       </div>

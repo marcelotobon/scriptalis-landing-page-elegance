@@ -1,113 +1,69 @@
 
-import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { toast } from "@/components/ui/sonner";
-import { Mail, User, MessageSquare } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Mail, MessageSquare } from "lucide-react";
 
 const Contacto2 = () => {
-  const [formData, setFormData] = useState({
-    nombre: "",
-    correo: "",
-    motivo: ""
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Datos del formulario:", formData);
-    
-    // Mostrar mensaje de éxito
-    toast.success("Formulario enviado correctamente");
-    
-    // Resetear el formulario
-    setFormData({
-      nombre: "",
-      correo: "",
-      motivo: ""
-    });
-  };
-
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <section className="pt-32 md:pt-40 pb-16 md:pb-24 bg-white flex-grow">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-scriptalis-dark">Contáctanos</h1>
-            <p className="text-lg text-gray-600">Completa el formulario y nos pondremos en contacto contigo lo antes posible</p>
+            <p className="text-lg text-gray-600">Estamos aquí para ayudarte. Contáctanos por cualquiera de estos medios.</p>
           </div>
           
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="space-y-2">
-                <Label htmlFor="nombre" className="text-scriptalis-dark flex items-center gap-2">
-                  <User size={18} className="text-scriptalis-accent" />
-                  Nombre completo
-                </Label>
-                <Input
-                  id="nombre"
-                  name="nombre"
-                  placeholder="Escribe tu nombre completo"
-                  value={formData.nombre}
-                  onChange={handleChange}
-                  required
-                  className="w-full"
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="correo" className="text-scriptalis-dark flex items-center gap-2">
-                  <Mail size={18} className="text-scriptalis-accent" />
-                  Correo electrónico
-                </Label>
-                <Input
-                  id="correo"
-                  name="correo"
-                  type="email"
-                  placeholder="tu@correo.com"
-                  value={formData.correo}
-                  onChange={handleChange}
-                  required
-                  className="w-full"
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="motivo" className="text-scriptalis-dark flex items-center gap-2">
-                  <MessageSquare size={18} className="text-scriptalis-accent" />
-                  Motivo de consulta
-                </Label>
-                <Textarea
-                  id="motivo"
-                  name="motivo"
-                  placeholder="Escribe detalladamente tu consulta..."
-                  value={formData.motivo}
-                  onChange={handleChange}
-                  required
-                  className="w-full min-h-[150px]"
-                />
-              </div>
-              
-              <Button 
-                type="submit" 
-                className="w-full bg-scriptalis-accent hover:bg-scriptalis-accent/90"
-              >
-                Enviar mensaje
-              </Button>
-            </form>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <CardContent className="p-0">
+                <a 
+                  href="https://wa.me/message" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center p-10 h-full hover:bg-gray-50 transition-colors"
+                >
+                  <div className="bg-green-500 text-white p-4 rounded-full mb-6">
+                    <MessageSquare className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-2 text-scriptalis-dark">WhatsApp</h3>
+                  <p className="text-gray-600 text-center mb-6">
+                    Comunícate directamente con nuestro equipo de ventas por WhatsApp para una respuesta rápida.
+                  </p>
+                  <div className="mt-auto px-6 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors">
+                    Abrir WhatsApp
+                  </div>
+                </a>
+              </CardContent>
+            </Card>
+            
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <CardContent className="p-0">
+                <a 
+                  href="mailto:ventas@scriptalis.com" 
+                  className="flex flex-col items-center p-10 h-full hover:bg-gray-50 transition-colors"
+                >
+                  <div className="bg-scriptalis-accent text-white p-4 rounded-full mb-6">
+                    <Mail className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-2 text-scriptalis-dark">Correo Electrónico</h3>
+                  <p className="text-gray-600 text-center mb-6">
+                    Envíanos un correo a nuestra dirección de ventas y te responderemos en menos de 24 horas.
+                  </p>
+                  <div className="mt-auto px-6 py-2 bg-scriptalis-accent text-white rounded-md hover:bg-scriptalis-accent/90 transition-colors">
+                    Enviar Correo
+                  </div>
+                </a>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="text-center mt-12">
+            <p className="text-gray-600">
+              También puedes llamarnos de lunes a viernes de 9:00 a 18:00 horas
+            </p>
           </div>
         </div>
       </section>
