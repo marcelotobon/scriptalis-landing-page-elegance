@@ -52,21 +52,21 @@ const AIWriting = () => {
                   <div className="bg-scriptalis-light/50 p-2 rounded-full mr-4">
                     <div className="w-6 h-6 text-center">✓</div>
                   </div>
-                  <p>Genera borradores completos a partir de conceptos básicos o titulares</p>
+                  <p>Genera textos completos a partir de conceptos básicos o titulares</p>
                 </div>
                 
                 <div className="flex items-start">
                   <div className="bg-scriptalis-light/50 p-2 rounded-full mr-4">
                     <div className="w-6 h-6 text-center">✓</div>
                   </div>
-                  <p>Investiga múltiples fuentes y sintetiza información automáticamente</p>
+                  <p>Sintetiza información automáticamente</p>
                 </div>
                 
                 <div className="flex items-start">
                   <div className="bg-scriptalis-light/50 p-2 rounded-full mr-4">
                     <div className="w-6 h-6 text-center">✓</div>
                   </div>
-                  <p>Sugiere ángulos periodísticos alternativos basados en datos</p>
+                  <p>Personaliza tu texto con inputs personalizados</p>
                 </div>
               </div>
               
@@ -104,6 +104,7 @@ const AIWriting = () => {
             </div>
             
             <div className="reveal-on-scroll order-1 md:order-2">
+              <p className="text-xl font-semibold text-scriptalis-accent mb-2">Próximamente</p>
               <h2 className="text-2xl md:text-4xl font-bold mb-6">
                 Generación de contenido avanzada
               </h2>

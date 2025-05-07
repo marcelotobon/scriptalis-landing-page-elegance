@@ -59,14 +59,14 @@ const ReadyToPublish = () => {
                   <div className="bg-scriptalis-light/50 p-2 rounded-full mr-4">
                     <div className="w-6 h-6 text-center">✓</div>
                   </div>
-                  <p>Verificación automática de datos y fuentes citadas</p>
+                  <p>Archivo de texto listo para enviar a tu editor</p>
                 </div>
                 
                 <div className="flex items-start">
                   <div className="bg-scriptalis-light/50 p-2 rounded-full mr-4">
                     <div className="w-6 h-6 text-center">✓</div>
                   </div>
-                  <p>Integración directa con los principales CMS y plataformas de publicación</p>
+                  <p>Ortografía y redacción sin errores</p>
                 </div>
               </div>
               
