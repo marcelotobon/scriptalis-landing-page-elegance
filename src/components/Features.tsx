@@ -8,19 +8,19 @@ const featureData = [
     title: "Redacción Asistida por IA",
     description: "Genera artículos periodísticos, reportajes y contenido de alta calidad en minutos, ahorrando horas de trabajo en investigación y escritura.",
     icon: Brain,
-    link: "/intelligent-automation"
+    link: "/ai-writing"
   },
   {
     title: "Preserva tu Estilo Personal",
     description: "Nuestra tecnología aprende y preserva tu voz única como periodista, adaptándose a tu tono y estilo editorial particular.",
     icon: Pencil,
-    link: "/seamless-collaboration"
+    link: "/personal-style"
   },
   {
     title: "Textos Listos para Publicar",
     description: "Recibe contenido perfectamente formateado que cumple con los estándares periodísticos, listo para ser publicado sin revisiones extensas.",
     icon: FileText,
-    link: "/powerful-analytics"
+    link: "/ready-to-publish"
   }
 ];
 

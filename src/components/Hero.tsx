@@ -16,11 +16,11 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Link to="/contacto2">
+            <a href="https://calendly.com/marcelotobong/30min" target="_blank" rel="noopener noreferrer">
               <Button className="bg-scriptalis-accent hover:bg-scriptalis-accent/90 text-white text-lg px-8 py-6">
-                Hablar con ventas
+                Obtén una demo
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
