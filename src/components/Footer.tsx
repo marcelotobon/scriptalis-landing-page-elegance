@@ -1,5 +1,6 @@
 
 import { Separator } from "@/components/ui/separator";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
           <div>&copy; {new Date().getFullYear()} Scriptalis. Todos los derechos reservados.</div>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-scriptalis-accent">Términos de uso y política de privacidad</a>
+            <Link to="/terminos" className="hover:text-scriptalis-accent">Términos de uso y política de privacidad</Link>
           </div>
         </div>
       </div>

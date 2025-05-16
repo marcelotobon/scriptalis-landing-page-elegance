@@ -9,6 +9,7 @@ import Contacto2 from "./pages/Contacto2";
 import AIWriting from "./pages/AIWriting";
 import PersonalStyle from "./pages/PersonalStyle";
 import ReadyToPublish from "./pages/ReadyToPublish";
+import Terminos from "./pages/Terminos";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/ai-writing" element={<AIWriting />} />
           <Route path="/personal-style" element={<PersonalStyle />} />
           <Route path="/ready-to-publish" element={<ReadyToPublish />} />
+          <Route path="/terminos" element={<Terminos />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
