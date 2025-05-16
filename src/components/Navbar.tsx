@@ -41,7 +41,7 @@ const Navbar = () => {
             <Button variant="outline" className="ml-4">Iniciar sesión</Button>
           </a>
           
-          <a href="https://calendly.com/marcelotobong/30min" target="_blank" rel="noopener noreferrer">
+          <a href="https://calendly.com/scriptalis/30min" target="_blank" rel="noopener noreferrer">
             <Button className="bg-scriptalis-accent hover:bg-scriptalis-accent/90">
               Obtén una demo
             </Button>
