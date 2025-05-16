@@ -40,7 +40,7 @@ const ContactCTA = () => {
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
             <a 
-              href="https://wa.me/message" 
+              href="https://wa.me/526672736089" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white rounded-md px-6 py-3 transition-colors w-full"
