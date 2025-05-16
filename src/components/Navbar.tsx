@@ -27,7 +27,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <Link to="/" className="text-scriptalis-dark font-bold text-xl">
+          <Link to="/" className="text-scriptalis-accent font-bold text-xl">
             Scriptalis
           </Link>
         </div>
