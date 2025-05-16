@@ -20,7 +20,7 @@ const Contacto2 = () => {
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <CardContent className="p-0">
                 <a 
-                  href="https://wa.me/message" 
+                  href="https://wa.me/526672736089" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex flex-col items-center p-10 h-full hover:bg-gray-50 transition-colors"
